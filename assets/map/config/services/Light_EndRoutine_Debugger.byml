@@ -15,5 +15,5 @@ $events.methods_collection:
                             sessionVars:
                                 - light_csrf_simple
                             path: ${app_dir}/tmp/session-content.txt
-                callable_method: initialize
+                callable_method: handle
 

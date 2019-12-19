@@ -43,25 +43,26 @@ as we can see in the following example configuration:
 
 
 ```yaml
-
 # --------------------------------------
 # hooks
 # --------------------------------------
-
-$end_routine.methods_collection:
+$events.methods_collection:
     -
-        method: registerHandler
+        method: registerListener
         args:
-            identifier: Light_EndRoutine_Debugger
-            handler:
+            events: Light.end_routine
+            listener:
                 instance: Ling\Light_EndRoutine_Debugger\Handler\LightEndRoutineDebuggerHandler
                 methods:
                     setOptions:
                         options:
                             showSession: true
                             sessionVars:
-                                - csrf_tools_token
+                                - light_csrf_simple
                             path: ${app_dir}/tmp/session-content.txt
+                callable_method: handle
+
+
 
 
 
@@ -81,6 +82,10 @@ Related
 History Log
 =============
 
+- 1.2.1 -- 2019-12-19
+
+    - fix service configuration functional typo
+    
 - 1.2.0 -- 2019-12-19
 
     - update LightEndRoutineDebuggerHandler to accommodate Light.end_routine event instead of the end_routine service
