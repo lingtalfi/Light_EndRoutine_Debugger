@@ -1,6 +1,6 @@
 Light_EndRoutine_Debugger
 ===========
-2019-09-20
+2019-09-20 -> 2019-12-19
 
 
 
@@ -81,6 +81,10 @@ Related
 History Log
 =============
 
+- 1.2.0 -- 2019-12-19
+
+    - update LightEndRoutineDebuggerHandler to accommodate Light.end_routine event instead of the end_routine service
+    
 - 1.1.0 -- 2019-09-23
 
     - add LightEndRoutineDebuggerHandler.options.path option
