@@ -82,6 +82,10 @@ Related
 History Log
 =============
 
+- 1.2.2 -- 2020-12-04
+
+    - Add lpi-deps.byml file
+
 - 1.2.1 -- 2019-12-19
 
     - fix service configuration functional typo
