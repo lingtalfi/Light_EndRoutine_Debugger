@@ -87,6 +87,10 @@ Related
 History Log
 =============
 
+- 1.2.6 -- 2021-05-03
+
+    - Update dependencies to Ling.Light_Logger (pushed by SubscribersUtil)
+
 - 1.2.5 -- 2021-03-15
 
     - update planet to adapt Ling.Light:0.70.0
